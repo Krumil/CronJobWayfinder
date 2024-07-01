@@ -2,7 +2,7 @@ import requests
 import os
 
 def update_addresses():
-    api_url = os.environ.get('API_URL', 'https://your-fastapi-app.onrender.com/update_addresses')
+    api_url = os.environ.get('API_URL', 'https://promptcachingdashboardserver.onrender.com/update_addresses')
     try:
         response = requests.post(api_url)
         if response.status_code == 200:
